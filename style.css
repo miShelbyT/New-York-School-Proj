@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --dark-green: #2f3f43;
+  --greige: #6E7072;
+  --neutral-light-grey: #E7EAF2;
+  --ny-logo-blue: #0075B6;
+  --ny-logo-teal: #41B1D6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+    "nav nav"
+    "section aside"
+    "footer footer";
+  ;
+  grid-template-rows: 70px 1fr 50px;
+  grid-template-columns: 1fr 300px;
+}
+
+nav {
+  background-color: var(--dark-green);
+  color: var(--neutral-light-grey);
+  box-shadow: 0 7px 10px var(--dark-green);
+  grid-area: nav;
+  z-index: 1;
+  display: flex;
+}
+
+section {
+  background-color: var(--neutral-light-grey);
+  grid-area: section;
+}
+
+aside {
+  background-color: var(--ny-logo-blue);
+  grid-area: aside;
+}
+
+footer {
+  background-color: var(--ny-logo-teal);
+  grid-area: footer;
+}
+
+.logo {
+  height: 180%;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: 0 7px 6px var(--dark-green);
+}
+
+ul {
+  list-style: none;
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--neutral-light-grey);
+  font-size: 22px;
+}
+
+ul li a:hover {
+  color: #ace7fa;
+}
+
+
+
+li input {
+  color: var(--neutral-light-grey);
+  background-color: var(--greige);
+  width: 175px;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+}
+
+input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-align: right; 
+  margin-right: 4px;
+  color: var(--neutral-light-grey);
+  font-size: 20px;
+  opacity: 1; /* Firefox */
+}
+
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--neutral-light-grey);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--neutral-light-grey);
+}
+
+/* section {
+  
+} */
+
+header {
+  position: relative;
+  margin-top: 10%;
+}
+
+header img {
+  width: 600px;
+  filter: saturate(25%);
+}
+
+header h1 {
+  position: absolute;
+  top: 3%;
+  left: 18%;
+  z-index: 1;
+}
