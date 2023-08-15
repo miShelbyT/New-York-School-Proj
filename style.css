@@ -104,17 +104,13 @@ input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--neutral-light-grey);
 }
 
-/* section {
-  
-} */
-
 header {
   position: relative;
   margin-top: 10%;
 }
 
 header img {
-  width: 600px;
+  width: 100%;
   filter: saturate(25%);
 }
 
@@ -124,3 +120,12 @@ header h1 {
   left: 18%;
   z-index: 1;
 }
+
+.options {
+  display: none;
+}
+
+.show-options:hover .options {
+  display: block;
+}
+
