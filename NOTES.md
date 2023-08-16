@@ -1,6 +1,5 @@
 Todo: 
-• add ol
-• style the table
+• add ol somewhere
 • form that doesn't need to submit but does validate via JS 
     • needs placeholders
 • add some media queries for images

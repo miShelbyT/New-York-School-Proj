@@ -212,6 +212,24 @@ aside p {
   text-align: center;
 }
 
+table, th, td {
+  border: 1px dotted #000;
+  font-size: 18px;
+  padding: 4px;
+}
+
+thead {
+  color: var(--neutral-light-grey);
+  background-color: var(--dark-green);
+}
+
+td {
+  color: var(--dark-green);
+}
+
+
+
+
 /* footer */
 
 footer {
