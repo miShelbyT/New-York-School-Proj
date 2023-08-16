@@ -11,14 +11,15 @@
   <body>
     <nav>
       <img src="assets/ny_logo.jpg" class="logo" alt="new york state">
-      <ul class="navlinks">
-        <li>
+      <ul>
+        <li class="link navlink">
           <a href="#">Services</a>
         </li>
-        <li>
+        <li class="link navlink">
           <a href="#">News</a>
         </li>
-        <li>
+        <li id="icon-container" class="link navlink">
+          <span>&#128269;</span>
           <input type="text" placeholder="Search"></input>
         </li>
       </ul>
@@ -28,7 +29,7 @@
       <header>
         <h1>Welcome To Your New York</h1>
         <figure>
-          <img src="assets/ny_img.jpg" alt="outline statue of liberty, bridge and buildings">
+          <img src="assets/ny_img.jpg" alt="outline statue of liberty, bridge and buildings" id="homepage-img">
             <figcaption>image by 
               <a href="https://www.freepik.com/free-vector/new-york-skyline_722135.htm#query=new york skyline silhouette&position=13&from_view=search&track=ais">Freepik</a>
             </figcaption>
@@ -40,23 +41,48 @@
           <i class="fa fa-caret-down"></i>
         </h3>
         <ul class="options">
-          <li>
-            <a href="albany.html">State Capital: Albany</a>
-          </li>
-          <li>
+          <li class="link explore">
             <a href="new_york_city.html">Largest City: New York City</a>
           </li>
-          <li>
+          <li class="link explore">
             <a href="buffalo.html">Second Largest City: Buffalo</a>
+          </li>
+          <li class="link explore">
+            <a href="albany.html">State Capital: Albany</a>
           </li>
         </ul>
       </div>
       
     </section>
-    <aside>ASIDE</aside>
+    <aside>
+      <header>
+        <h2>Statistics</h2>
+      </header>
+      <ul>
+        <li>Population: 19,677,151</li>
+        <li>Admitted to the Union: July 26, 1788 (11th state)</li>
+        <li>Largest City: New York City</li>
+        <li>Largest County: Kings (Brooklyn)</li>
+        <li>Average Per Capita Income: $43,208</li>
+        <li>Governor: Kathy Hochul</li>
+        <li>US Senators:
+          <ul>
+            <li>Chuck Schumer</li>
+            <li>Kirsten Gillibrand</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        (<a href="https://en.wikipedia.org/wiki/New_York_(state)" target="_blank">Wikipedia</a>, n.d.)
+        (<a href="https://www.census.gov/quickfacts/fact/table/NY/INC110221" target="_blank">US Census Bureau</a>, n.d.)
+      </p>
+    </aside>
 
-    <footer>NY State logo by 
-      <a href="https://www.freepik.com/free-vector/flat-design-usa-states-outline-map_25000434.htm#query=new york state&position=30&from_view=search&track=ais">Freepik</a>
+    <footer>
+      <p>NY State logo by 
+        <a href="https://www.freepik.com/free-vector/flat-design-usa-states-outline-map_25000434.htm#query=new york state&position=30&from_view=search&track=ais">Freepik</a>
+      </p>
+      <span>&copy; NY State WIP</span>
    </footer>
   </body>
 </html>

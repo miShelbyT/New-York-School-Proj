@@ -6,6 +6,7 @@
   --neutral-light-grey: #E7EAF2;
   --ny-logo-blue: #0075B6;
   --ny-logo-teal: #41B1D6;
+  --ny-light-teal: #b3e0ee;
 }
 
 * {
@@ -25,8 +26,10 @@ body {
     "footer footer";
   ;
   grid-template-rows: 70px 1fr 50px;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 400px;
 }
+
+/* basic grid elements and nav elements */
 
 nav {
   background-color: var(--dark-green);
@@ -60,7 +63,7 @@ footer {
   cursor: pointer;
 }
 
-.navlinks {
+nav ul {
   list-style: none;
   width: 85%;
   display: flex;
@@ -68,17 +71,19 @@ footer {
   align-items: center;
 }
 
-.navlinks li a {
+.navlink a {
   text-decoration: none;
   color: var(--neutral-light-grey);
   font-size: 22px;
 }
 
-.navlinks li a:hover {
+.navlink a:hover {
   color: #ace7fa;
 }
 
-
+.navlink a:visited {
+  color: var(--ny-logo-teal);
+}
 
 li input {
   color: var(--neutral-light-grey);
@@ -97,6 +102,16 @@ input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: 1; /* Firefox */
 }
 
+#icon-container {
+  position: relative;
+}
+
+#icon-container span {
+  position: absolute;
+  left: 3%;
+  top: 18%;
+}
+
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: var(--neutral-light-grey);
@@ -106,14 +121,19 @@ input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--neutral-light-grey);
 }
 
+/* main content */
+
 header {
   position: relative;
   margin-top: 10%;
 }
 
-header img {
+header img, #homepage-img {
   margin-top: 40px;
   width: 100%;
+}
+
+#homepage-img {
   filter: saturate(25%);
 }
 
@@ -134,9 +154,14 @@ header h1 {
   font-size: 35px;
 }
 
+/* Explore section in main content */
+
 .show-options {
   border: 1px dotted var(--dark-green);
-  width: 60%;
+  border-radius: 3px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: var(--ny-light-teal);
 }
 
 .options {
@@ -145,7 +170,7 @@ header h1 {
   list-style-type: none;
 }
 
-.options a {
+.explore a {
   text-decoration: none;
 }
 
@@ -160,15 +185,50 @@ header h1 {
   color: var(--dark-green);
 }
 
-.options li:hover > a {
+.explore:hover a {
   color: var(--neutral-light-grey);
 }
 
-.options li:hover {
+.explore:hover {
   background-color: var(--greige);
 }
 
 .show-options:hover .options {
   display: block;
+}
+
+/* aside content */
+
+aside {
+  padding: 20px;
+  overflow: scroll;
+}
+
+aside ul {
+  line-height: 2.5;
+}
+
+aside p {
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  /* text-align: center; */
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-size: 13px;
+  margin: 0;
+}
+
+footer span {
+  margin-top: 5px;
+  float: right;
 }
 
