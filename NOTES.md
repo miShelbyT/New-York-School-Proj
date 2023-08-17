@@ -1,7 +1,7 @@
 Todo: 
-• add ol somewhere
-• form that doesn't need to submit but does validate via JS 
-    • needs placeholders
+• check on method for HTML form
+• WAVE tool for accessability
+• add ol - somewhere
 • add some media queries for images
 • host on Netlify and confirm everything works
 
@@ -58,7 +58,7 @@ C.  Create an external CSS file with the following CSS rules and formatting, and
 
 ✅   a :hover pseudo-class to create a rollover effect for navigation buttons
 
-2.  a float property to position at least one HTML element to the side of another in your web page
+2.  ✅ a float property to position at least one HTML element to the side of another in your web page
 
 3.  ✅ absolute and relative positioning in at least one area of your web page
 
