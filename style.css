@@ -4,9 +4,9 @@
   --dark-green: #2f3f43;
   --greige: #6E7072;
   --neutral-light-grey: #E7EAF2;
-  --ny-logo-blue: #0075B6;
+  --ny-logo-blue: #005E92;
   --ny-logo-teal: #41B1D6;
-  --ny-light-teal: #b3e0ee;
+  --ny-light-teal: #9ce2f7;
 }
 
 * {
@@ -54,11 +54,11 @@ aside {
 }
 
 footer {
-  background-color: var(--ny-logo-teal);
+  background-color: var(--ny-light-teal);
   grid-area: footer;
 }
 
-.logo {
+#logo {
   height: 180%;
   border-radius: 7px;
   margin: 10px;
@@ -111,6 +111,7 @@ input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   position: relative;
 }
 
+/* contains magnifying glass in nav input */
 #icon-container span {
   position: absolute;
   left: 3%;
@@ -142,7 +143,7 @@ header img, #homepage-img {
   filter: saturate(25%);
 }
 
-.buffalo-img {
+#buffalo-img {
   height: 55%;
 }
 
@@ -182,7 +183,7 @@ form, .show-options {
   border-radius: 3px;
 }
 
-form, .show-options h3, input[type="submit"] {
+form, input[type="submit"] {
   font-size: 17px;
 }
 
@@ -227,7 +228,7 @@ input[type="submit"] {
   text-decoration: none;
 }
 
-.show-options h3 {
+.show-options p {
   margin: 0;
 }
 
@@ -300,5 +301,51 @@ footer p {
 footer span {
   margin-top: 5px;
   float: right;
+}
+
+/* media queries on images and grid sections */
+
+@media screen and (min-width: 1035px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body {
+    grid-template-areas: 
+    "nav nav"
+    "section section"
+    "aside aside"
+    "footer footer";
+  ;
+  grid-template-rows: 70px 1fr 200px 50px;
+  }
+
+  aside header {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buffalo-img {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  #buffalo-title {
+    left: 40%;
+    margin-top: 0;
+  }
+
+  aside li, aside p, .navlink a, .navlink input::placeholder {
+    font-size: 14px;
+  }
 }
 
