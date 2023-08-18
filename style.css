@@ -359,3 +359,31 @@ footer span {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #logo {
+    height: 75px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    top: 7%;
+    left: 15%;
+  }
+  nav ul {
+    justify-content: space-around;
+    padding-left: 0;
+  }
+
+  nav ul input {
+    width: 75%;
+  }
+
+  #buffalo-img {
+    width: 370px;
+  }
+
+  figure {
+    margin: auto 0;
+  }
+}
+
