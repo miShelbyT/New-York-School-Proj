@@ -238,8 +238,14 @@ input[type="submit"]:active {
   text-decoration: none;
 }
 
-.show-options p {
+.show-options button {
   margin: 0;
+  height: 40px;
+  background-color: var(--ny-light-teal);
+  color: var(--dark-green);
+  font-size: 16px;
+  border: 1px dotted var(--dark-green);
+  border-radius: 4px;
 }
 
 

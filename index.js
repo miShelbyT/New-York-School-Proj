@@ -51,7 +51,6 @@ if(toggleFormBtn && form) {
   })
 }
 
-
 const workInProgress = () => {
   alert("This feature is still under construction. Please come back later. Thank you.")
 }
