@@ -257,7 +257,7 @@ input[type="submit"]:active {
   background-color: var(--greige);
 }
 
-.show-options:hover .options {
+.show-options:hover .options, .no-touch .options {
   display: block;
 }
 
