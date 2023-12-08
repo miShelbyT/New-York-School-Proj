@@ -229,8 +229,8 @@ details {
 }
 
 .options {
-  margin-top: 0;
-  list-style-type: none;
+  list-style-type: "\2734";
+  color: var(--ny-logo-blue);
 }
 
 .explore a {
