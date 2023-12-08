@@ -177,7 +177,7 @@ header h1 {
   margin: 10px 0;
 }
 
-form, .show-options {
+form, details {
   width: 85%;
   margin: 15px auto;
   border-radius: 3px;
@@ -223,14 +223,13 @@ form button:active {
 
 /* Explore section in main content */
 
-.show-options {
+details {
   border: 1px dotted var(--dark-green);  
   background-color: var(--ny-light-teal);
 }
 
 .options {
   margin-top: 0;
-  display: none;
   list-style-type: none;
 }
 
@@ -238,7 +237,7 @@ form button:active {
   text-decoration: none;
 }
 
-.show-options button {
+details button {
   margin: 0;
   height: 40px;
   background-color: var(--ny-light-teal);
@@ -249,23 +248,33 @@ form button:active {
 }
 
 
-.show-options, .options a {
+details, .options a {
   font-size: 18px;
   padding: 3px 7px;
   color: var(--dark-green);
 }
 
+details li {
+  line-height: 175%;
+}
+
 .explore:hover a {
   color: var(--neutral-light-grey);
+  background-color: var(--ny-logo-blue);
 }
 
-.explore:hover {
-  background-color: var(--greige);
+details summary {
+  padding: 0.5em;
 }
 
-.show-options:hover .options, .no-touch .options {
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+/* details:hover .options, .no-touch .options {
   display: block;
-}
+} */
 
 
 /* aside content */

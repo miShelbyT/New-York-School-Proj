@@ -56,7 +56,3 @@ const workInProgress = () => {
 }
 
 navLinks.forEach(link => link.addEventListener("click", () => workInProgress()))
-
-const addOnTouchClass = ()=> {
-  document.querySelector(".show-options").classList.add("no-touch")
-}
