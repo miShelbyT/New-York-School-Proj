@@ -27,3 +27,7 @@ If you would like to contribute to this project, please submit a pull request.
 <p align="center">
   <img src="assets/ny_img.jpg" width="400" height="350">
 </p>
+
+### 4. Note
+
+Emoji graphics are from the open source project Twemoji[https://twemoji.twitter.com/]. The graphics are copyright 2020 Twitter, Inc and other contributors and are licensed under CC-BY 4.0[https://creativecommons.org/licenses/by/4.0/]. 
